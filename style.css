@@ -1,11 +1,11 @@
 * {
     padding: 0;
     margin: 0;
-  
 }
 body {
     font-family: sans-serif;
     color: #444;
+    position: relative;
 }
 .main-header {
     background-color: #f7f7f7;
@@ -13,17 +13,28 @@ body {
     margin-bottom: 60px;
     height: 80px;
 }
-.container{
+.container {
     width: 800px;
     margin: 0 auto;
+
+    border: 1px solid red;
 }
-nav{
+nav {
     font-size: 18px;
+    text-align: center;
 }
-.post-header{
+nav a:link {
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+nav a:link:last-child {
+    margin-right: 0;
+}
+.post-header {
     margin-bottom: 40px;
 }
-article{
+article {
     margin-bottom: 60px;
 }
 
@@ -32,7 +43,7 @@ aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
-    width:500px ;
+    width: 500px;
 }
 h1,
 h2,
@@ -73,7 +84,8 @@ p {
     font-style: italic;
     font-size: 18px;
 }
-ul,ol{
+ul,
+ol {
     margin-left: 50px;
     margin-bottom: 20px;
 }
@@ -106,7 +118,36 @@ a:hover {
 a:active {
     color: rgb(210, 30, 171);
 }
-.post-img{
-    width: 100%;;
+.post-img {
+    width: 100%;
     height: auto;
+}
+button {
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    /* bottom:-2px; */
+    bottom: 50px;
+}
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+h2 {
+   
+    position: relative;
+}
+h2::after {
+    content: "TOP";
+    font-size: 16px;
+    background-color: #ffe70e;
+position: absolute;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+    right: -25px;
+    top:-10px;
+    color:#000;
 }
